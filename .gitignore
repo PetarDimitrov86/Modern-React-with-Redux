@@ -2,6 +2,7 @@
 
 # dependencies
 /JSX/node_modules
+/components/node_modules
 /.pnp
 .pnp.js
 
