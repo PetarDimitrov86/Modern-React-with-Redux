@@ -23,7 +23,7 @@ class App extends Component {
       return <SeasonDisplay latitute={this.state.latitude}/>;
     }
 
-    return <Spinner />;
+    return <Spinner message="Please accept location request" />;
   }
 }
 
