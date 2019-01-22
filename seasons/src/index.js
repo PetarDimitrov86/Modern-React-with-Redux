@@ -6,21 +6,29 @@ class App extends Component {
     // never skip to pass the props to the super! ! !
     super(props);
 
-    this.state = { latitude: null }
+    this.state = { latitude: null, errorMessage: "" };
 
     window.navigator.geolocation.getCurrentPosition(
       position => {
-        this.setState({ latitude: position.coords.latitude })
+        this.setState({ latitude: position.coords.latitude, errorMessage: "" });
       },
       err => {
-        this.setState({ latitude: 'Please allow your browser to access your location' })
+        this.setState({ errorMessage: err.message, latitude: null });
       }
-    )
+    );
   }
 
   // react component classes should always have a render method
   render() {
-    return <div>Latitude: {this.state.latitude} </div>
+    if (this.state.errorMessage && !this.state.latitude) {
+      return <div>Error: {this.state.errorMessage}</div>
+    } 
+
+    if (!this.state.errorMessage && this.state.latitude) {
+      return <div>Latitude: {this.state.latitude}</div>
+    }
+
+    return <div>Loading...</div>
   }
 }
 
