@@ -2,13 +2,25 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 class App extends Component {
-  render() {
-    window.navigator.geolocation.getCurrentPosition(
-      position => console.log(position),
-      err => console.log(err)
-    )
+  constructor(props) {
+    // never skip to pass the props to the super! ! !
+    super(props);
 
-    return <div>Latitude: </div>
+    this.state = { latitude: null }
+
+    window.navigator.geolocation.getCurrentPosition(
+      position => {
+        this.setState({ latitude: position.coords.latitude })
+      },
+      err => {
+        this.setState({ latitude: 'Please allow your browser to access your location' })
+      }
+    )
+  }
+
+  // react component classes should always have a render method
+  render() {
+    return <div>Latitude: {this.state.latitude} </div>
   }
 }
 
