@@ -25,24 +25,36 @@ const App = () => {
   return (
     <div className="ui container comments">
       <h3 className="ui dividing header">Comments</h3>
-      <CommentDetail
-        author={getRandomFullName()}
-        timeAgo={getDaysAgo()}
-        content={faker.lorem.sentences()}
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author={getRandomFullName()}
-        timeAgo={getDaysAgo()}
-        content={faker.lorem.sentences()}
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author={getRandomFullName()}
-        timeAgo={getDaysAgo()}
-        content={faker.lorem.sentences()}
-        avatar={faker.image.avatar()}
-      />
+      <ApprovalCard>
+        <div>
+          <h4>Warning!</h4>
+          Are you sure you want to do this?
+        </div>
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={getRandomFullName()}
+          timeAgo={getDaysAgo()}
+          content={faker.lorem.sentences()}
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={getRandomFullName()}
+          timeAgo={getDaysAgo()}
+          content={faker.lorem.sentences()}
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={getRandomFullName()}
+          timeAgo={getDaysAgo()}
+          content={faker.lorem.sentences()}
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
