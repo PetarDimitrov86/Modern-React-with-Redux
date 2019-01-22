@@ -13,8 +13,7 @@ class App extends Component {
     );
   }
 
-  // react component classes should always have a render method
-  render() {
+  renderContent() {
     if (this.state.errorMessage && !this.state.latitude) {
       return <div>Error: {this.state.errorMessage}</div>;
     }
@@ -24,6 +23,11 @@ class App extends Component {
     }
 
     return <Spinner message="Please accept location request" />;
+  }
+
+  // react component classes should always have a render method
+  render() {
+    return <div className='border red'>{this.renderContent()}</div>;
   }
 }
 
