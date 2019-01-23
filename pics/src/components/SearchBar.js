@@ -12,7 +12,8 @@ class SearchBar extends Component {
   // Preferred method to point to the correct this. Important to use an arrow function here
   onFormSubmit = event => {
     event.preventDefault();
-    console.log(this.state.term);
+    
+    this.props.onSubmit(this.state.term);
   }
 
   render() {
