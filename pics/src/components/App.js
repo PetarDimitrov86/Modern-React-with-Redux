@@ -3,7 +3,14 @@ import axios from 'axios';
 import SearchBar from './SearchBar';
 
 class App extends Component {
-  async onSearchSubmit(term) {
+  constructor(props) {
+    super(props);
+
+    this.state = { images: [] };
+    //this.onSearchSubmit = this.onSearchSubmit.bind(this);
+  }
+
+  onSearchSubmit = async term => {
     const response = await axios
       .get(`https://api.unsplash.com/search/photos`, {
         params: {
@@ -15,7 +22,7 @@ class App extends Component {
         }
       });
     
-    console.log(response.data.results);
+    this.setState({ images: response.data.results });
   }
 
   render() {
@@ -23,6 +30,7 @@ class App extends Component {
       <div className='ui container' style={{ marginTop: '10px' }}>
         {/* The onSubmit is a name that we chose. It can be any name we want */}
         <SearchBar onSubmit={this.onSearchSubmit} />
+        Found <strong>{this.state.images.length}</strong> images
       </div>
     );
   }
