@@ -5,6 +5,7 @@
 /components/node_modules
 /seasons/node_modules
 /pics/node_modules
+/pics/src/api/unsplash.js
 /.pnp
 .pnp.js
 
