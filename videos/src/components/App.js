@@ -7,7 +7,10 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { videos: [] };
+    this.state = {
+      videos: [],
+      selectedVideo: null
+    };
   }
 
   onQuerySubmit = async query => {
@@ -17,14 +20,21 @@ class App extends Component {
       }
     });
 
-    this.setState({ videos: response.data.items} );
+    this.setState({ videos: response.data.items });
   };
+
+  onVideoSelect = video => {
+    this.setState({ selectedVideo: video });
+  }
 
   render() {
     return (
       <div className="ui container">
         <SearchBar onFormSubmit={this.onQuerySubmit} />
-        <VideoList videos={this.state.videos} />
+        <VideoList
+          onVideoSelect={this.onVideoSelect}
+          videos={this.state.videos}
+        />
       </div>
     );
   }
