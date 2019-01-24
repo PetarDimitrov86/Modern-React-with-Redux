@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   onQuerySubmit = async query => {
-    let response = await youtube.get('/search', {
+    const response = await youtube.get('/search', {
       params: {
         q: query
       }
