@@ -6,6 +6,7 @@
 /seasons/node_modules
 /pics/node_modules
 /videos/node_modules
+/songs/node_modules
 /.pnp
 .pnp.js
 
