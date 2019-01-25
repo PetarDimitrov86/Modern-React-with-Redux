@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { selectSong } from '../actions';
 
-class App extends Component {
-  render() {
-    return <div>Songs App</div>
-  };
-}
+const App = () => {
+  return <div>Songs App</div>;
+};
 
 export default App;
