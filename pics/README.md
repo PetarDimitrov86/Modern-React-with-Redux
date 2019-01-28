@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+73. App Overview  05:03
+74. Component Design  03:39
+75. Adding Some Project Structure  04:30
+76. Showing Forms to the User  03:53
+77. Adding a Touch of Style  03:41
+78. Creating Event Handlers  07:42
+79. Alternate Event Handler Syntax  02:29
+80. Uncontrolled vs Controlled Elements  03:38
+81. More on Controlled Elements  10:27
+82. Handling Form Submittal  03:43
+83. Understanding 'this' In Javascript  11:27
+84. Solving Context Issues  07:19
+85. Communicating Child to Parent  03:36
+86. Invoking Callbacks in Children  04:42
+87. Fetching Data  04:30
+88. Axios vs Fetch  04:41
+89. Viewing Request Results  08:16
+90. Handling Requests with Async Await  07:38
+91. Setting State After Async Requests  06:19
+92. Binding Callbacks  02:17
+93. Creating Custom Clients  05:28
+94. Rendering Lists  02:41
+95. Review of Map Statements  05:40
+96. Rendering Lists of Components  02:54
+97. The Purpose of Keys in Lists  05:32
+98. Implementing Keys in Lists  04:27
+-- OPTIONAL --
+99. Grid CSS  06:20
+100. Issues with Grid CSS  04:20
+101. Creating an Image Card Component  05:16
+102. Accessing the DOM with Refs  03:24
+103. Accessing Image Height  07:43
+104. Callbacks on Image Load  02:53
+105. Dynamic Spans  07:18
