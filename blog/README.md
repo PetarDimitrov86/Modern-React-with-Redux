@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+153. App Overview and Goals  07:37
+154. Initial App Setup  06:17
+155. Tricking Redux with Dummy Reducers  03:16
+156. A Touch More Setup  02:25
+157. How to Fetch Data in a Redux App  05:59
+158. Wiring Up an Action Creator  03:01
+159. Making a Request From an Action Creator  05:13
+160. Understanding Async Action Creators  08:56
+161. More on Async Action Creators  05:47
+162. Middlewares in Redux  03:52
+163. Behind the Scenes of Redux Thunk  10:07
+164. Shortened Syntax with Redux Thunk  06:44
+165. Rules of Reducers  02:54
+166. Return Values from Reducers  03:07
+167. Argument Values  05:04
+168. Pure Reducers  02:35
+169. Mutations in Javascript  06:50
+170. Equality of Arrays and Objects  02:39
+171. A Misleading Rule  12:24
+172. Safe State Updates in Reducers  09:59
+173. Switch Statements in Reducers  04:07
+174. Dispatching Correct Values  06:44
+175. List Building!  04:00
+176. Displaying Users  07:39
+177. Fetching Singular Records  04:10
+178. Displaying the User Header  05:07
+179. Finding Relevant Users  07:49
+180. Extracting Logic to MapStateToProps  07:47
+181. That's the Issue!  02:38
+182. Memoizing Functions  06:54
+183. Memoization Issues  06:49
+184. One Time Memoization  04:46
+185. Alternate Overfetching Solution  04:25
+186. Action Creators in Action Creators!  07:42
+187. Finding Unique User Ids  08:36
+188. Quick Refactor with Chain  04:11
+189. App Wrapup  03:34
