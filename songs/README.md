@@ -1,3 +1,6 @@
+# Section: 13
+# Integrating React with Redux
+
 137. React Cooperating with Redux  01:40
 138. React, Redux, and...React-Redux!?  05:34
 139. Design of the Redux App  04:36

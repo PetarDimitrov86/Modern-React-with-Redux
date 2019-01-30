@@ -1,3 +1,6 @@
+# Section: 3
+# Communicating with Props
+
 24. Three Tenets of Components  02:54
 25. Application Overview  02:50
 26. Getting Some Free Styling  07:15

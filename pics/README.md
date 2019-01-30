@@ -1,3 +1,6 @@
+# Section: 7
+# Handling User Input with Forms and Events
+
 73. App Overview  05:03
 74. Component Design  03:39
 75. Adding Some Project Structure  04:30
@@ -12,6 +15,10 @@
 84. Solving Context Issues  07:19
 85. Communicating Child to Parent  03:36
 86. Invoking Callbacks in Children  04:42
+
+# Section: 8
+# Making API Requests with React
+
 87. Fetching Data  04:30
 88. Axios vs Fetch  04:41
 89. Viewing Request Results  08:16
@@ -19,12 +26,20 @@
 91. Setting State After Async Requests  06:19
 92. Binding Callbacks  02:17
 93. Creating Custom Clients  05:28
+
+# Section: 9
+# Building Lists of Records
+
 94. Rendering Lists  02:41
 95. Review of Map Statements  05:40
 96. Rendering Lists of Components  02:54
 97. The Purpose of Keys in Lists  05:32
 98. Implementing Keys in Lists  04:27
--- OPTIONAL --
+
+# -- OPTIONAL --
+# Section: 10
+# Using Ref's for DOM Access
+
 99. Grid CSS  06:20
 100. Issues with Grid CSS  04:20
 101. Creating an Image Card Component  05:16

@@ -1,3 +1,6 @@
+# Section: 14
+# Async Actions with Redux Thunk
+
 153. App Overview and Goals  07:37
 154. Initial App Setup  06:17
 155. Tricking Redux with Dummy Reducers  03:16
@@ -10,6 +13,10 @@
 162. Middlewares in Redux  03:52
 163. Behind the Scenes of Redux Thunk  10:07
 164. Shortened Syntax with Redux Thunk  06:44
+
+# Section: 15
+# Redux Store Design
+
 165. Rules of Reducers  02:54
 166. Return Values from Reducers  03:07
 167. Argument Values  05:04

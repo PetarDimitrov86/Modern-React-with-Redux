@@ -1,3 +1,6 @@
+# Section: 2
+# Building Content with JSX
+
 10. Javascript Module Systems  07:54
 11. Displaying Content with Functional Components  04:56
 14. What is JSX?  05:11
