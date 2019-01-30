@@ -30,3 +30,4 @@ yarn-debug.log*
 yarn-error.log*
 pics/src/api/accessKey.json
 videos/src/apis/youtubeKey.json
+streams/client/src/apis/OAuth.json
