@@ -1,4 +1,12 @@
-import { SIGN_IN, SIGN_OUT } from './types';
+import { 
+  SIGN_IN, 
+  SIGN_OUT, 
+  CREATE_STREAM,
+  FETCH_STREAMS,
+  FETCH_STREAM,
+  EDIT_STREAM,
+  DELETE_STREAM
+} from './types';
 import streams from '../apis/streams';
 
 export const signIn = userId => {
@@ -15,5 +23,31 @@ export const signOut = () => {
 };
 
 export const createStream = formValues => async dispatch => {
-  streams.post('/streams', formValues);
+  const response = await streams.post('/streams', formValues);
+
+  dispatch({ type: CREATE_STREAM, payload: response.data });
+};
+
+export const fetchStreams = () => async dispatch => {
+  const response = await streams.get('/streams');
+
+  dispatch({ type: FETCH_STREAMS, payload: response.data });
+};
+
+export const fetchStream = streamId => async dispatch => {
+  const response = await streams.get(`/streams/${streamId}`);
+
+  dispatch({ type: FETCH_STREAM, payload: response.data });
+};
+
+export const deleteStream = streamId => async dispatch => {
+  await streams.delete(`/streams/${streamId}`);
+
+  dispatch({ type: DELETE_STREAM, payload: streamId});
+};
+
+export const editStream = (streamId, formValues) => async dispatch => {
+  const response = await streams.put(`/streams/${streamId}`, formValues);
+
+  dispatch({ type: EDIT_STREAM, payload: response.data });
 };
