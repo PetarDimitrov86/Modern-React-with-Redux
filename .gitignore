@@ -9,6 +9,7 @@
 /songs/node_modules
 /blog/node_modules
 /streams/client/node_modules
+/streams/api/node_modules
 /.pnp
 .pnp.js
 
