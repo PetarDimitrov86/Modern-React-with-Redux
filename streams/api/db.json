@@ -10,6 +10,12 @@
       "description": "This was made by me",
       "userId": "112509494189477140667",
       "id": 2
+    },
+    {
+      "title": "testing redirect",
+      "description": "using the history object",
+      "userId": "112509494189477140667",
+      "id": 3
     }
   ]
 }
