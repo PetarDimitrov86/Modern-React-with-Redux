@@ -16,6 +16,12 @@
       "description": "using the history object",
       "userId": "112509494189477140667",
       "id": 3
+    },
+    {
+      "title": "Testing Refactored Code",
+      "description": "After common form code is extracted",
+      "userId": "112509494189477140667",
+      "id": 4
     }
   ]
 }
