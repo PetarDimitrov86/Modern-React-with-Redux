@@ -18,14 +18,8 @@ class App extends Component {
           <LanguageSelector/>
           <div>
             Select a color:
-            <i
-              className='tint icon red'
-              onClick={() => this.onColorChange('red')}
-            />
-            <i
-              className='tint icon blue'
-              onClick={() => this.onColorChange('primary')}
-            />
+            <i className='tint icon red' onClick={() => this.onColorChange('red')} />
+            <i className='tint icon blue' onClick={() => this.onColorChange('primary')} />
           </div>
           <ColorContext.Provider value={this.state.color}>
             <UserCreate />
