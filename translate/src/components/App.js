@@ -20,6 +20,16 @@ class App extends Component {
         <LanguageContext.Provider value={this.state.language}>
           <UserCreate />
         </LanguageContext.Provider>
+        
+        {/* 
+        Always gets the hardcoded value from here
+        <LanguageContext.Provider value='dutch'>
+          <UserCreate />
+        </LanguageContext.Provider>
+
+        Always gets the default value set in the LanguageContext.js file
+        <UserCreate /> 
+        */}
       </div>
     )
   }
