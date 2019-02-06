@@ -12,6 +12,7 @@
 /streams/api/node_modules
 /streams/rtmpserver/node_modules
 /translate/node_modules
+/hooks-simple/node_modules
 /.pnp
 .pnp.js
 
