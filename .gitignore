@@ -14,6 +14,7 @@
 /translate/node_modules
 /hooks-simple/node_modules
 /seasons-hooks/node_modules
+/13-testing/node_modules
 /.pnp
 .pnp.js
 
