@@ -11,29 +11,33 @@ class CommentBox extends Component {
 
   handleChange = e => {
     this.setState({ comment: e.target.value });
-  }
+  };
 
   handleSubmit = e => {
     e.preventDefault();
-    
+
     this.props.saveComment(this.state.comment);
 
-    this.setState({ comment: ''} );
-  }
+    this.setState({ comment: '' });
+  };
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h4>Add a Comment</h4>
-        <textarea 
-        value={this.state.comment} 
-        onChange={this.handleChange} />
-        <div>
-          <button>Submit Comment</button>
-        </div>
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <h4>Add a Comment</h4>
+          <textarea value={this.state.comment} onChange={this.handleChange} />
+          <div>
+            <button>Submit Comment</button>
+          </div>
+        </form>
+        <button className='fetch-comments' onClick={this.props.fetchComments}>Fetch Comments</button>
+      </div>
     );
   }
 }
 
-export default connect(null, actions)(CommentBox);
+export default connect(
+  null,
+  actions
+)(CommentBox);
