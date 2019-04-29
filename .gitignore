@@ -15,6 +15,7 @@
 /hooks-simple/node_modules
 /seasons-hooks/node_modules
 /13-testing/node_modules
+/14-auth/server/node_modules
 /.pnp
 .pnp.js
 
