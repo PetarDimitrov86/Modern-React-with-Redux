@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 //const session = require('express-session');
 //const MongoStore = require('connect-mongo')(session);
@@ -16,6 +17,7 @@ mongoose
   .connect(MONGO_URI, { useNewUrlParser: true });
 
 app.use(morgan('combined'));
+app.use(cors());
 app.use(bodyParser.json({ type: '*/* ' }));
 router(app);
 
